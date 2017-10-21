@@ -1,6 +1,6 @@
 package com.lambda;
 
-import static java.text.MessageFormat.format;
+import com.lambda.bo.Person;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -8,9 +8,7 @@ import java.util.List;
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
 
-import org.springframework.boot.SpringApplication;
-
-import com.lambda.bo.Person;
+import static java.text.MessageFormat.format;
 
 public class LambdaExpressionsApplication {
 
@@ -29,7 +27,6 @@ public class LambdaExpressionsApplication {
 	static Comparator<Person> cmpLastName = Comparator.comparing(f3);
 
 	public static void main(final String[] args) {
-		SpringApplication.run(LambdaExpressionsApplication.class, args);
 		System.out.println((sum.apply(2, 4)));
 
 		List<Person> people = Arrays.asList(new Person("Ion", "Ciobanu", 31), new Person("Vasya", "Marian", 25), new Person("Aliona", "Ignat", 22));

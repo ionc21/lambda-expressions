@@ -1,5 +1,7 @@
 package com.lambda.spliterator;
 
+import com.lambda.bo.Person;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
@@ -8,8 +10,6 @@ import java.nio.file.Paths;
 import java.util.Spliterator;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
-
-import com.lambda.bo.Person;
 
 public class CustomSpliterator {
 

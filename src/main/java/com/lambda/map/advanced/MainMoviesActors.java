@@ -1,22 +1,18 @@
 package com.lambda.map.advanced;
 
+import com.lambda.model.Actor;
+import com.lambda.model.Movie;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
-import com.lambda.model.Actor;
-import com.lambda.model.Movie;
 
 public class MainMoviesActors {
 
